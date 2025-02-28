@@ -7,15 +7,15 @@ st.markdown("Hecho por Diego Luna Baldwin @ Crear4D")
 
 # 🔹 **Datos ingresados por el usuario**
 st.header("📥 Datos de Costos Generales")
-coste_plastico = st.number_input("💰 Coste del plástico (S/. por kg)", min_value=0.0, value=80.0)
-coste_luz = st.number_input("⚡ Coste de la electricidad (S/. por kWh)", min_value=0.0, value=0.60)
+coste_plastico = st.number_input("💰 Coste del plástico (S/. por kg)", min_value=0.0, value=50.0)
+coste_luz = st.number_input("⚡ Coste de la electricidad (S/. por kWh)", min_value=0.0, value=0.67)
 consumo_medio = st.number_input("🔌 Consumo medio de la impresora (kW)", min_value=0.0, value=0.25)
 
 coste_por_hora_luz = coste_luz * consumo_medio
 st.write(f"🔹 **Coste por hora de electricidad**: S/. {coste_por_hora_luz:.2f}")
 
 st.header("🏭 Costos de Amortización")
-coste_impresora = st.number_input("🖨️ Coste de la impresora (S/.)", min_value=0.0, value=4000.0)
+coste_impresora = st.number_input("🖨️ Coste de la impresora (S/.)", min_value=0.0, value=3000.0)
 tiempo_amortizacion = st.number_input("⌛ Tiempo de amortización (años)", min_value=1, value=3)
 dias_activa = st.number_input("📅 Días activa al año", min_value=1, max_value=365, value=300)
 horas_por_dia = st.number_input("⏳ Horas activa por día", min_value=1, max_value=24, value=8)
